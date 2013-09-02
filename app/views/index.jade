@@ -1,5 +1,6 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+	each item in items
+		a(href='http://dart.fss.or.kr/dsaf001/main.do?rcpNo=' + item.rcp_no, target='new')= '[' + item.rcp_dt + '] ' + item.rpt_nm
+		br
