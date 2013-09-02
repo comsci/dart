@@ -8,3 +8,6 @@ npm-debug.log
 /dist
 .tmp
 .sass-cache
+
+app/components
+app/private
