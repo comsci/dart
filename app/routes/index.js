@@ -2,7 +2,7 @@ var request = require('request');
 
 exports.index = function(req, res){
   request(
-    'http://dart.fss.or.kr/api/search.json?auth=c0d8ff01675e520c02426ac55eee239b0694b55d&crp_cd=035720&sort=date&series=desc&page_set=25&start_dt=' + create_start_dt(), 
+    'http://dart.fss.or.kr/api/search.json?auth=&crp_cd=035720&sort=date&series=desc&page_set=25&start_dt=' + create_start_dt(), 
     function (error, response, body) {
       if (!error && response.statusCode == 200) {
         eval('var result = ' + body);
